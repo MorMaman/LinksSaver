@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Link Saver</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="container" id="navContainer">
+        <h1 class="nav-header">Link Saver</h1>
+        <a id="addBtn">+</a>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div id="addLinkContainer" class="full-screen-opaque hidden">
+        <div class="panel " id="addLinkPanel">
+          <h3 class="header">Add Link</h3>
+          <form id="addLinkForm">
+            <input type="text" name="title" id="linkTitle" class="form-control" placeholder="Title" />
+            <input type="text" name="url" id="linkUrl" class="form-control" placeholder="URL" />
+            <input type="text" name="title" id="linkCategory" class="form-control" placeholder="Categories (coma separated)" />
+            
+            <div id="addedCategories"></div>
+            <input type="submit" id="submitButton" value="Submit" />
+            <input type="submit" id="cancelButton" value="Cancel" />
+          </form>
+        </div>
+      </div>
+
+      <div id="linksList">
+        <div class="link panel">
+          <div class="link-options">
+            <button class="btn-sm">Delete</button>
+            <button class="btn-sm">Edit</button>
+          </div>
+          <a href="#">
+            <h1 class="header">Link Title</h1>
+          </a>
+          <p class="link-date">10/10/10</p>
+          <div class="categories">
+            categories:
+            <span class="category">WEb</span>
+            <span class="category">WEb</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
